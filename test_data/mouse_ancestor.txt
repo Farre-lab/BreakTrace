@@ -1,0 +1,4 @@
+ancestor	1	0	50000	chr1	0	50000	+	mouse	chromosomes
+ancestor	1	450000	550000	chr1	450000	550000	+	mouse	chromosomes
+ancestor	2	0	80000	chr2	0	80000	+	mouse	chromosomes
+ancestor	2	90000	150000	chr2	90000	150000	+	mouse	chromosomes

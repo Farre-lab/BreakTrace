@@ -1,0 +1,5 @@
+ancestor	1	0	50000	chr1	0	50000	+	chimp	chromosomes
+ancestor	1	60000	110000	chr1	60000	110000	+	chimp	chromosomes
+ancestor	1	170000	250000	chr1	170000	250000	+	chimp	chromosomes
+ancestor	2	0	80000	chr2	0	80000	+	chimp	chromosomes
+ancestor	2	90000	150000	chr2	90000	150000	+	chimp	chromosomes

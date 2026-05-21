@@ -1,0 +1,5 @@
+ancestor	1	0	48000	chr1	0	48000	+	gorilla	chromosomes
+ancestor	1	62000	112000	chr1	62000	112000	+	gorilla	chromosomes
+ancestor	1	172000	250000	chr1	172000	250000	+	gorilla	chromosomes
+ancestor	2	0	82000	chr2	0	82000	+	gorilla	chromosomes
+ancestor	2	93000	150000	chr2	93000	150000	+	gorilla	chromosomes
