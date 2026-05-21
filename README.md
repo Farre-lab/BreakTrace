@@ -253,4 +253,4 @@ Code available at: https://github.com/Farre-lab/BreakTrace
 
 ## Licence
 
-MIT Licence. See `LICENCE` for details.
+GPL-3.0 Licence. See `LICENCE` for details.
