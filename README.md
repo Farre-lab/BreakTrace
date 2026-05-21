@@ -50,7 +50,7 @@ Each EBR is classified **twice**: conservatively (breaks only) and optimisticall
 ## Installation
 
 ```bash
-pip install pandas intervaltree biopython
+pip3 install pandas intervaltree biopython
 ```
 
 Python 3.8 or later required.
@@ -61,13 +61,13 @@ Python 3.8 or later required.
 
 ```bash
 # Step 1 — find breakpoints and build the matrix
-python breakpoints.py \
+python3 breakpoints.py \
     --synteny-dir synteny/ \
     --resolution 300000 \
     --output results/matrix.tsv
 
 # Step 2 — classify EBRs using the phylogenetic tree
-python classify_ebrs.py \
+python3 classify_ebrs.py \
     results/matrix.tsv \
     tree.nwk \
     --ancestor MAMMAL \
@@ -115,7 +115,7 @@ Branch lengths are accepted but ignored — only topology matters.
 Finds EBRs from pairwise synteny files and builds a cross-species matrix.
 
 ```
-python breakpoints.py [-h] (--synteny-dir DIR | --input-files FILE [FILE ...])
+python3 breakpoints.py [-h] (--synteny-dir DIR | --input-files FILE [FILE ...])
                       --resolution INT [--increase INT] [--output FILE]
 ```
 
@@ -149,7 +149,7 @@ Each merged group reports:
 Classifies EBRs in the matrix using parsimony on a phylogenetic tree.
 
 ```
-python classify_ebrs.py [-h] matrix_tsv newick_file
+python3 classify_ebrs.py [-h] matrix_tsv newick_file
                         --ancestor NAME [--threshold FLOAT] [--output FILE]
 ```
 
@@ -220,12 +220,12 @@ All original matrix columns plus, inserted before species columns:
 A small synthetic test dataset is included in `test_data/` to verify the installation:
 
 ```bash
-python breakpoints.py \
+python3 breakpoints.py \
     --synteny-dir test_data/synteny/ \
     --resolution 100000 \
     --output test_data/matrix.tsv
 
-python classify_ebrs.py \
+python3 classify_ebrs.py \
     test_data/matrix.tsv \
     test_data/tree.nwk \
     --ancestor ANC2 \
@@ -235,7 +235,7 @@ python classify_ebrs.py \
 The full test suite (requires `pytest`) covers all pipeline steps:
 
 ```bash
-pip install pytest
+pip3 install pytest
 pytest test_breakpoints.py test_classify_ebrs.py -v
 ```
 
