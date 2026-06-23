@@ -181,7 +181,10 @@ def _mrca_classify(
         return ("ancestral", mrca_name)
     if fraction >= threshold:
         return ("partial_mrca", f"{mrca_name} ({fraction:.2f})")
-    return ("convergent", "convergent")
+    # For convergent, list the positive species so the user can see
+    # which lineages independently acquired the break.
+    species_list = ",".join(sorted(positive))
+    return ("convergent", f"convergent ({species_list})")
 
 
 # ---------------------------------------------------------------------------
